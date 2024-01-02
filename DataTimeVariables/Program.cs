@@ -20,14 +20,15 @@
 //Console.WriteLine(rightNow);
 
 // Type Conversions
-Console.WriteLine("What is your First Name: ");
+Console.Write("What is your First Name: ");
 string? firstName = Console.ReadLine();
-Console.WriteLine("What is your Last Name: ");
+Console.Write("What is your Last Name: ");
 string? lastName = Console.ReadLine();
 
-Console.WriteLine("Hi, " + firstName + " " + lastName + ", How old are you: ");
+Console.Write($"Hi {firstName} {lastName}, How old are you?");
+
 string? ageText = Console.ReadLine();
 
 int age = int.Parse(ageText);
 
-Console.WriteLine(firstName + " " + lastName + ", you will be " + (age + 20) + " in 20 years.");
+Console.WriteLine($"{firstName} {lastName}, you will be {age + 20} in 20 years!");
