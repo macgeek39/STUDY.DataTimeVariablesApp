@@ -14,8 +14,20 @@
 //Console.WriteLine($"Birthday full format: {birthday}");
 
 //Time Only
-TimeOnly openAt = TimeOnly.Parse("9:00 AM");
-TimeOnly rightNow = TimeOnly.FromDateTime(DateTime.Now);
+//TimeOnly openAt = TimeOnly.Parse("9:00 AM");
+//TimeOnly rightNow = TimeOnly.FromDateTime(DateTime.Now);
+//Console.WriteLine(openAt);
+//Console.WriteLine(rightNow);
 
-Console.WriteLine(openAt);
-Console.WriteLine(rightNow);
+// Type Conversions
+Console.WriteLine("What is your First Name: ");
+string? firstName = Console.ReadLine();
+Console.WriteLine("What is your Last Name: ");
+string? lastName = Console.ReadLine();
+
+Console.WriteLine("Hi, " + firstName + " " + lastName + ", How old are you: ");
+string? ageText = Console.ReadLine();
+
+int age = int.Parse(ageText);
+
+Console.WriteLine(firstName + " " + lastName + ", you will be " + (age + 20) + " in 20 years.");
